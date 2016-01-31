@@ -29,6 +29,7 @@ public class FullscreenActivity extends Activity {
             }
         }
     }
+    // 共享文字处理
     void handleSendText(Intent intent) {
         String sharedText = intent.getStringExtra(Intent.EXTRA_TEXT);
         if (sharedText != null) {
