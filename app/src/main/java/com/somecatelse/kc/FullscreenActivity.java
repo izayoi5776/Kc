@@ -122,7 +122,7 @@ public class FullscreenActivity extends Activity {
             WebView t = (WebView)findViewById(R.id.webView);
             //t.loadData(getString(R.string.full_screen_loading), "text/html", null);
             // 画面選択時カンマとドットが選ばれるが、検索できないため削除する
-            String s = sharedText.trim().replaceAll("\\.", "").replaceAll(",", "");
+            String s = sharedText.trim().replaceAll("\\.\"()", "").replaceAll(",", "");
             t.loadUrl("http://dict.baidu.com/s?wd=" + s);
             mShareText=s;
         }
